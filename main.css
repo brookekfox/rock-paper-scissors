@@ -1,0 +1,56 @@
+input {
+	height: 200px;
+	width: 300px;
+	background-color: #f0f0f0;
+	border: 2px dotted blue;
+	color: green;
+	font-size: 60pt;
+	text-align: center;
+	position: absolute;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -150px;
+	background-image: url("http://img3.wikia.nocookie.net/__cb20130113192209/bobsburgerpedia/images/6/6e/Tina_render.png");
+	background-repeat: repeat-y;
+	/*box-shadow: 5px 5px 5px #888888;*/
+}
+
+p {
+	color: green;
+	font-size: 30pt;
+	width: 873px;
+	/*font-family: 'Abel', sans-serif;*/
+	font-family: 'Quicksand', sans-serif;
+	text-align: justify;
+	position: absolute;
+	top: 400px;
+	left: 263px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 100pt;
+	color: green;
+	text-align: center;
+}
+
+body {
+	/*height: 800px;
+	width: 800px;*/
+	text-align: justify;
+	position: relative;
+	background-color: #f0f0f0;
+}
+
+.centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	/*negative half of the image’s or element’s size*/
+	margin-top: -50px;
+	margin-left: -100px;
+}

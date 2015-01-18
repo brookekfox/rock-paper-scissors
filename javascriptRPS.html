@@ -1,0 +1,73 @@
+	<script type="text/javascript">
+		function RPS() {
+			//result variable
+			var result = true;
+			// var compChoice = "";
+
+			while (result == true && userChoice != "quit") {
+				//declaring the computer's choice via Math.random()
+				var compChoice = Math.random();
+				if (compChoice >= 0 && compChoice <= 0.33) {
+					compChoice = "rock";
+				}
+				else if (compChoice > 0.33 && compChoice <= 0.67) {
+					compChoice = "paper";
+				}
+				else {
+					compChoice = "scissors";
+				}
+
+				//user choice is inputted via a prompt
+				var userChoice = prompt("Make your selection:");
+				//same choice
+				if (userChoice === compChoice) {
+					alert("It's a tie!");
+					console.log("It's a tie!");
+				}
+				//user picks rock
+				else if (userChoice === "rock") {
+					if (compChoice === "paper") {
+						alert("You lose! The computer chose " + compChoice + ".");
+						console.log("You lose! The computer chose " + compChoice + ".");
+						result = false;
+					}
+					else {
+						alert("You win! The computer chose " + compChoice + ".");
+						console.log("You lose! The computer chose " + compChoice + ".");
+					}
+				}
+				//user picks paper
+				else if (userChoice === "paper") {
+					if (compChoice === "scissors") {
+						alert("You lose! The computer chose " + compChoice + ".");
+						console.log("You lose! The computer chose " + compChoice + ".");
+						result = false;
+					}
+					else {
+						alert("You win! The computer chose " + compChoice + ".");
+						console.log("You lose! The computer chose " + compChoice + ".");
+					}
+				}
+				//user picks scissors
+				else if (userChoice === "scissors") {
+					if (compChoice === "rock") {
+						alert("You lose! The computer chose " + compChoice + ".");
+						console.log("You lose! The computer chose " + compChoice + ".");
+						result = false;
+					}
+					else {
+						alert("You win! The computer chose " + compChoice + ".");
+						console.log("You lose! The computer chose " + compChoice + ".");
+					}
+				}
+				else if (userChoice === "quit") {
+					result = false;
+				}
+				else {
+					alert("That's not a valid pick, dum dum.");
+					console.log("That's not a valid pick, dum dum.");
+				}
+			}
+		}
+		RPS();
+	</script>
